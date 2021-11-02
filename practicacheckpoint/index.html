@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        
+    <title>Grid Assignement</title>
+
+    <style>
+        .gridOne {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .gridTwo {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+        }
+
+        .one {
+            background-color: red;
+        }
+
+        .two {
+            background-color: blue;
+
+
+        }
+
+        .three {
+            background-color: yellow;
+        }
+
+        .gridThree {
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+            width: 500px;
+            height: 300px;
+            margin: 200px;
+
+
+
+        }
+
+        .divone {
+            background-color: grey;
+        }
+
+        .divtwo {
+            width: 500px;
+            height: 225px;
+            object-fit: cover;
+
+        }
+
+        .divFour {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            width: 500px;
+            background-color: green;
+            margin-top: 300px;
+            margin-bottom: 200px;
+        }
+
+        #divchildtwo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+
+        }
+
+
+
+        .divFive {
+            display: block;
+            background-size: initial;
+            background-color: lightgrey;
+
+
+        }
+
+
+
+        #gridFive img {
+            margin-left: 50px;
+            margin-right: 50px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            background-color: lightgrey;
+        }
+
+        .gridSix {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            background-color: lightgrey;
+            width: 500px;
+        }
+
+        .gridSix p {
+
+
+
+            font-family: 'irish grover', cursive;
+        }
+
+    </style>
+
+</head>
+
+
+
+
+<body>
+    <div class="gridOne">
+        <p>Hello World</p>
+        <p style="color: blue;">My Fantastic Content</p>
+    </div>
+    <div class="gridTwo">
+
+        <div class="one">
+            <p>
+                whatever
+            </p>
+        </div>
+        <div class="two">
+            <p>
+                text
+            </p>
+        </div>
+        <div class="three">
+            <p>
+                i want
+            </p>
+        </div>
+    </div>
+    <div class="gridThree">
+        <div class="divone">
+            <p> The text i choose is awesome</p>
+        </div>
+        <div class="divtwo">
+            <p>
+                <img src="images/cat.png" alt="Kitty">
+            </p>
+        </div>
+    </div>
+
+
+    <div class="divFour">
+        <div class="divchildone">
+            <p>
+                My Even More Awesome Text
+            </p>
+        </div>
+        <div id="divchildtwo">
+            <p>
+                My left text
+            </p>
+            <p>
+                My right text
+            </p>
+        </div>
+    </div>
+
+    <div class="divFive">
+        <div class="child">
+            <p>
+                My Even More Awesome Text
+            </p>
+        </div>
+        <div id="gridFive">
+
+            <img src="images/katrina.jpg" alt="calavera" style="float: left; ">
+            <img src="images/spider.jpg" alt="tela de arania" style="float: right; ">
+
+        </div>
+    </div>
+
+    <div class="gridSix">
+        <i class="fab fa-angellist"> </i>
+        <p>
+
+            My AWESOME Google font is applied here.
+        </p>
+
+    </div>
+
+</body>
+
+</html>
